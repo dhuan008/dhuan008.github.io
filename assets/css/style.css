@@ -1,3 +1,7 @@
+body {
+  background: url("../images/email-pattern.png");
+}
+
 header{
   background: url("../images/shiba-inu.jpg");
   background-size: cover;
@@ -19,6 +23,10 @@ header{
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active{
+  background: transparent;
+}
+
+.tabs{
   background: transparent;
 }
 
