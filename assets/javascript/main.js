@@ -1,7 +1,12 @@
-$(document).ready(() => {
-    $('.work').on('mouseenter', event => {
-        $(event.currentTarget).addClass('photo-active')
-    }).on('mouseleave', event => {
-        $(event.currentTarget).removeClass('photo-active')
-    })
+$(document).ready(function () {
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+    $('.tabs').tabs();
+    $('.datepicker').datepicker({
+        //disableWeekends: true,
+        yearRange: 1
+    });
+    $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();
+
 });
