@@ -16,6 +16,7 @@ $(document).ready(function () {
         var scrollTrigger = 100, // px
             backToTop = function () {
                 var scrollTop = $(window).scrollTop();
+                console.log(scrollTop);
                 if (scrollTop > scrollTrigger) {
                     $('#back-to-top').removeClass('scale-out');
                 }
