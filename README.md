@@ -1,11 +1,12 @@
+## Portfolio Page
 Live site: https://dhuan008.github.io/
 
-Projects Section: 
-click image for game
-click title for code 
+### Projects Section: 
+ * Click image for web app
+ * Click title for code 
 
-Todo: 
+#### Todo: 
 make better gifs
 mobile responsive navbar
 message linked to email & phone number
-resume download
+make real resume
