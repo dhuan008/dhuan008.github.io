@@ -10,3 +10,4 @@ make better quality gifs
 mobile responsive navbar
 message linked to email & phone number
 make real resume
+fix tooltip positioning for different elements
