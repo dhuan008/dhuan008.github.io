@@ -2,11 +2,11 @@
 Live site: https://dhuan008.github.io/
 
 ### Projects Section: 
- * Click image for web app
- * Click title for code 
+ * Click header for web app
+ * Click description for code 
 
 #### Todo: 
-make better gifs
+make better quality gifs
 mobile responsive navbar
 message linked to email & phone number
 make real resume
