@@ -2,7 +2,7 @@ body {
   background: url("../images/email-pattern.png");
 }
 
-header{
+header {
   background: url("../images/shiba-inu.jpg");
   background-size: cover;
   background-position: center;
@@ -13,25 +13,42 @@ header{
   color: black;
 }
 
-.section{
+.section {
   padding-top: 4vw;
   padding-bottom: 4vw;
 }
 
-.tabs .indicator{
+.tabs .indicator {
   background-color: #1a237e;
 }
 
-.tabs .tab a:focus, .tabs .tab a:focus.active{
+.tabs .tab a:focus, .tabs .tab a:focus.active {
   background: transparent;
 }
 
-.tabs{
+.tabs {
   background: transparent;
 }
 
-@media screen and (max-width: 670px){
-  header{
+.datepicker-date-display, .datepicker-weekday-display {
+  background-color: #1a237e;
+}
+
+.datepicker-table td.is-today {
+  color: #536dfe;
+}
+
+.datepicker-table td.is-selected {
+  background-color: #1a237e;
+  color: white;
+}
+
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+  color: #1a237e;
+}
+
+@media screen and (max-width: 670px) {
+  header {
     min-height: 500px;
   }
 }
