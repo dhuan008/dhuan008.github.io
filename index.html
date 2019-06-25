@@ -2,285 +2,306 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>David Huang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>David Huang</title>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
 
-  <!-- Google Icon Font -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Meyer's Reset CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Meyer's Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-  <!-- Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="nav-wrapper transparent">
-      <div class="container">
-        <a href="#" class="brand-logo">David Huang</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-          <i class="material-icons">menu</i>
+    <!-- Navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">David Huang</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="https://github.com/dhuan008" class="tooltipped btn-floating btn-small brown darken-4"
+                            target="_blank" data-position="bottom" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/david-huang-b99822101/"
+                            class="tooltipped btn-floating btn-small brown darken-4" target="_blank"
+                            data-position="bottom" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Back to top -->
+    <div class="fixed-action-btn">
+        <a id="back-to-top" class="btn-floating btn-large waves-effect waves-light indigo darken-4 scale-transition">
+            <i class="large material-icons">keyboard_arrow_up</i>
         </a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a href="https://github.com/dhuan008" class="tooltipped btn-floating btn-small brown darken-4"
-              target="_blank" data-position="bottom" data-tooltip="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/david-huang-b99822101/"
-              class="tooltipped btn-floating btn-small brown darken-4" target="_blank" data-position="bottom"
-              data-tooltip="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-
-  <!-- Back to top -->
-  <div class="fixed-action-btn">
-    <a id="back-to-top" class="btn-floating btn-large waves-effect waves-light indigo darken-4 scale-transition">
-      <i class="large material-icons">keyboard_arrow_up</i>
-    </a>
-  </div>
-
-
-  <!-- Portfolio Grid -->
-  <section class="container section scrollspy" id="portfolio">
-
-    <!-- Word guess game -->
-    <div class="row">
-      <div class="col s12 l4">
-        <img src="./assets/images/word-guess-game.gif" alt="" class="responsive-img hoverable materialboxed">
-      </div>
-      <div class="col s12 l6 offset-l1">
-        <a href="https://dhuan008.github.io/Word-Guess-Game/" target="_blank">
-          <h2 class="indigo-text text-darken-4 tooltipped" data-position="top" data-tooltip="Open Web App">Word Guess
-          </h2>
-        </a>
-        <a href="https://github.com/dhuan008/Word-Guess-Game" target="_blank">
-          <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
-            tincidunt orci.</p>
-        </a>
-      </div>
     </div>
 
-    <!-- Tower finder -->
-    <div class="row">
-      <div class="col s12 l4 offset-l1 push-l7">
-        <img src="./assets/images/tower-finder.gif" alt="" class="responsive-img hoverable materialboxed">
-      </div>
-      <div class="col s12 l6 offset-l1 pull-l5 right-align">
-        <a href="https://andymendez100.github.io/tower-finder/" target="_blank">
-          <h2 class="indigo-text text-darken-4 tooltipped" data-position="top" data-tooltip="Open Web App">Tower Finder
-          </h2>
-        </a>
-        <a href="https://github.com/Andymendez100/tower-finder" target="_blank">
-          <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
-            tincidunt orci.</p>
-        </a>
-      </div>
-    </div>
 
-    <!-- Giftastic -->
-    <div class="row">
-      <div class="col s12 l4">
-        <img src="./assets/images/giphy.gif" alt="" class="responsive-img hoverable materialboxed">
-      </div>
-      <div class="col s12 l6 offset-l1">
-        <a href="https://dhuan008.github.io/GifTastic/" target="_blank">
-          <h2 class="indigo-text text-darken-4 tooltipped" data-position="top" data-tooltip="Open Web App">Giftastic
-          </h2>
-        </a>
-        <a href="https://github.com/dhuan008/GifTastic" target="_blank">
-          <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
-            tincidunt orci.</p>
-        </a>
-      </div>
-    </div>
+    <!-- Portfolio Grid -->
+    <section class="container section scrollspy" id="portfolio">
 
-  </section>
-
-
-  <!-- Parallax top -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="./assets/images/code-parallax-t.jpg" alt="" class="responsive-img">
-    </div>
-  </div>
-
-
-  <!-- Experience | Tabs -->
-  <section class="section container scrollspy" id="experience">
-    <div class="row">
-      <div class="col s12 l4 center-align">
-        <a href="assets/storage/resume-placeholder.pdf" download>
-          <h2 class="indigo-text text-darken-4">Resume</h2>
-          <i class="fas fa-file-download fa-10x hoverable tooltipped indigo-text text-darken-4" data-position="bottom"
-            data-tooltip="Click to Open"></i>
-        </a>
-        <p>Click to Open</p>
-      </div>
-      <div class="col s12 l6 offset-l2">
-
-        <!-- Tabs -->
-        <ul class="tabs">
-          <li class="tab col s6">
-            <a href="#groups" class="active indigo-text text-darken-4">Organizations</a>
-          </li>
-          <li class="tab col s6">
-            <a href="#skill" class="indigo-text text-darken-4">Skills</a>
-          </li>
-        </ul>
-        <div id="groups" class="col s12">
-          <br><br>
-          <p class="flow-text indigo-text text-darken-4">Organizations</p>
-          <br><br><br>
-          <p>Link to IESD? With logo?</p>
-          <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
-            scelerisque erat ornare nec.</p>
+        <!-- Word guess game -->
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="./assets/images/word-guess-game.gif" alt="" class="responsive-img hoverable materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <a href="https://dhuan008.github.io/Word-Guess-Game/" target="_blank">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="indigo-text text-darken-4 tooltipped" data-position="top"
+                                data-tooltip="Open Web App">
+                                Word Guess
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/dhuan008/Word-Guess-Game" target="_blank">
+                    <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+                        tincidunt orci.</p>
+                </a>
+            </div>
         </div>
-        <div id="skill" class="col s12">
-          <br><br>
-          <p class="flow-text indigo-text text-darken-4">Skills</p>
-          <br><br><br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
-            tincidunt orci.</p>
-          <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
-            scelerisque erat ornare nec.</p>
+
+        <!-- Tower finder -->
+        <div class="row">
+            <div class="col s12 l4 offset-l1 push-l7">
+                <img src="./assets/images/tower-finder.gif" alt="" class="responsive-img hoverable materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                <a href="https://andymendez100.github.io/tower-finder/" target="_blank">
+                    <h2 class="indigo-text text-darken-4 tooltipped" data-position="top" data-tooltip="Open Web App">
+                        Tower Finder
+                    </h2>
+                </a>
+                <a href="https://github.com/Andymendez100/tower-finder" target="_blank">
+                    <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+                        tincidunt orci.</p>
+                </a>
+            </div>
         </div>
-      </div>
-    </div>
-    </div>
-  </section>
 
-
-  <!-- Parallax bottom -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="./assets/images/code-parallax-b.jpg" alt="" class="responsive-img">
-    </div>
-  </div>
-
-
-  <!-- Contact form -->
-  <section class="section container scrollspy" id="contact">
-    <div class="row">
-      <div class="col s12 l5">
-        <h2 class="indigo-text text-darken-4">Get in Touch</h2>
-        <p>I would put my email here, but I'm not sure I should yet. In the meantime, here a email from which doesn't
-          actually email me.</p>
-        <p>In the meantime, you can contact me on my linkedin or github page if you're really interested.</p>
-        <p>Thanks for your time</p>
-        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
-          scelerisque erat ornare nec.</p>
-      </div>
-      <div class="col s12 l5 offset-l2">
-        <form>
-          <div class="input-field">
-            <i class="material-icons prefix">email</i>
-            <input type="email" id="email">
-            <label for="email">Your Email</label>
-          </div>
-          <div class="input-field">
-            <i class="material-icons prefix">message</i>
-            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
-            <label for="message">Your Message</label>
-          </div>
-          <div class="input-field">
-            <i class="material-icons prefix">date_range</i>
-            <input type="text" id="date" class="datepicker">
-            <label for="date">Choose a date you need me for...</label>
-          </div>
-          <div class="input-field">
-            <p>You Are:</p>
-            <p>
-              <label>
-                <input type="checkbox">
-                <span>Hiring</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox">
-                <span>Recruiter</span>
-              </label>
-            </p>
-          </div>
-          <div class="input-field center">
-            <button class="btn waves-effect waves-light indigo darken-4">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="page-footer grey darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5>About Me</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
-            tincidunt orci.</p>
+        <!-- Giftastic -->
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="./assets/images/giphy.gif" alt="" class="responsive-img hoverable materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <a href="https://dhuan008.github.io/GifTastic/" target="_blank">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="indigo-text text-darken-4 tooltipped" data-position="top"
+                                data-tooltip="Open Web App">Giftastic
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/dhuan008/GifTastic" target="_blank">
+                    <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor
+                        sit amet,
+                        consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+                        tincidunt orci.</p>
+                </a>
+            </div>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/dhuan008">Github</a></li>
-            <li><a class="grey-text text-lighten-3"
-                href="https://www.linkedin.com/in/david-huang-b99822101/">LinkedIn</a></li>
-          </ul>
+
+    </section>
+
+
+    <!-- Parallax top -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./assets/images/code-parallax-t.jpg" alt="" class="responsive-img">
         </div>
-      </div>
     </div>
-    <div class="footer-copyright grey darken-4">
-      <div class="container center-align">&copy; 2019 David Huang</div>
+
+
+    <!-- Experience | Tabs -->
+    <section class="section container scrollspy" id="experience">
+        <div class="row">
+            <div class="col s12 l4 center-align">
+                <a href="assets/storage/resume-placeholder.pdf" download>
+                    <h2 class="indigo-text text-darken-4">Resume</h2>
+                    <i class="fas fa-file-download fa-10x hoverable tooltipped indigo-text text-darken-4"
+                        data-position="bottom" data-tooltip="Click to Open"></i>
+                </a>
+                <p>Click to Open</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+
+                <!-- Tabs -->
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#groups" class="active indigo-text text-darken-4">Organizations</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#skill" class="indigo-text text-darken-4">Skills</a>
+                    </li>
+                </ul>
+                <div id="groups" class="col s12">
+                    <br><br>
+                    <p class="flow-text indigo-text text-darken-4">Organizations</p>
+                    <br><br><br>
+                    <p>Link to IESD? With logo?</p>
+                    <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida
+                        urna, vitae
+                        scelerisque erat ornare nec.</p>
+                </div>
+                <div id="skill" class="col s12">
+                    <br><br>
+                    <p class="flow-text indigo-text text-darken-4">Skills</p>
+                    <br><br><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
+                        elit nec,
+                        tincidunt orci.</p>
+                    <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida
+                        urna, vitae
+                        scelerisque erat ornare nec.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Parallax bottom -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./assets/images/code-parallax-b.jpg" alt="" class="responsive-img">
+        </div>
     </div>
-  </footer>
 
 
-  <!-- JQuery CDN -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Contact form -->
+    <section class="section container scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+                <p>I would put my email here, but I'm not sure I should yet. In the meantime, here a email from which
+                    doesn't
+                    actually email me.</p>
+                <p>In the meantime, you can contact me on my linkedin or github page if you're really interested.</p>
+                <p>Thanks for your time</p>
+                <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna,
+                    vitae
+                    scelerisque erat ornare nec.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date you need me for...</label>
+                    </div>
+                    <div class="input-field">
+                        <p>You Are:</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Hiring</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Recruiter</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn waves-effect waves-light indigo darken-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <!-- Materialize CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <!-- Script -->
-  <script src="assets/javascript/main.js"></script>
+    <!-- Footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5>About Me</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
+                        elit nec,
+                        tincidunt orci.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/dhuan008">Github</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.linkedin.com/in/david-huang-b99822101/">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2019 David Huang</div>
+        </div>
+    </footer>
+
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Materialize CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Script -->
+    <script src="assets/javascript/main.js"></script>
 
 </body>
 

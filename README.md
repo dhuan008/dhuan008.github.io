@@ -9,4 +9,4 @@ Live site: https://dhuan008.github.io/
 make better quality gifs
 message linked to email & phone number
 make real resume
-fix tooltip positioning for different elements
+fix tooltip positioning fir right aligned elements
