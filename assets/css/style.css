@@ -327,6 +327,8 @@ body {
   z-index: 100;
   width: 100%;
   border-bottom: 5px solid rgba(137, 137, 146, 0.5);
+  height: inherit;
+  line-height: inherit;
 }
 
 #navigation li {
