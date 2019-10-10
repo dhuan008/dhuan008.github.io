@@ -314,6 +314,7 @@ body {
   background-color: #283593;
   color: #fff;
   padding: 30px 5px;
+  border-top: 5px solid rgba(137, 137, 146, 0.5);
 }
 
 .copyrightSection p {
@@ -325,6 +326,7 @@ body {
   padding: 20px 10px;
   z-index: 100;
   width: 100%;
+  border-bottom: 5px solid rgba(137, 137, 146, 0.5);
 }
 
 #navigation li {
