@@ -1,308 +1,603 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>David Huang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/superslides.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
+    />
 
-    <!-- Google Icon Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <!-- Meyer's Reset CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-</head>
-
-
-<body>
-
-    <!-- Navbar -->
-    <header>
-        <nav class="nav-wrapper transparent">
-            <div class="container">
-                <a href="#" class="brand-logo">David Huang</a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <a href="https://github.com/dhuan008" class="tooltipped btn-floating btn-small brown darken-4"
-                            target="_blank" data-position="bottom" data-tooltip="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/david-huang-b99822101/"
-                            class="tooltipped btn-floating btn-small brown darken-4" target="_blank"
-                            data-position="bottom" data-tooltip="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-
-    <!-- Back to top -->
-    <div class="fixed-action-btn">
-        <a id="back-to-top" class="btn-floating btn-large waves-effect waves-light indigo darken-4 scale-transition">
-            <i class="large material-icons">keyboard_arrow_up</i>
-        </a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="inner"></div>
     </div>
 
+    <div id="slides">
+      <div class="overlay"></div>
 
-    <!-- Portfolio Grid -->
-    <section class="container section scrollspy" id="portfolio">
+      <div class="slides-container">
+        <img src="assets/img/slide1.jpg" alt="" />
+        <img src="assets/img/slide2.jpg" alt="" />
+        <img src="assets/img/slide3.jpg" alt="" />
+      </div>
 
-        <!-- Word guess game -->
-        <div class="row">
-            <div class="col s12 l4">
-                <img src="./assets/images/word-guess-game.gif" alt="" class="responsive-img hoverable materialboxed">
-            </div>
-            <div class="col s12 l6 offset-l1">
-                <a href="https://dhuan008.github.io/Word-Guess-Game/" target="_blank">
-                    <div class="row">
-                        <div class="col">
-                            <h2 class="indigo-text text-darken-4 tooltipped" data-position="top"
-                                data-tooltip="Open Web App">
-                                Word Guess
-                            </h2>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/dhuan008/Word-Guess-Game" target="_blank">
-                    <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
-                        tincidunt orci.</p>
-                </a>
-            </div>
+      <div class="titleMessage">
+        <div class="heading">
+          <p class="main">David Huang</p>
+          <p class="sub typed"></p>
         </div>
+      </div>
 
-        <!-- Tower finder -->
-        <div class="row">
-            <div class="col s12 l4 offset-l1 push-l7">
-                <img src="./assets/images/tower-finder.gif" alt="" class="responsive-img hoverable materialboxed">
-            </div>
-            <div class="col s12 l6 offset-l1 pull-l5 right-align">
-                <a href="https://andymendez100.github.io/tower-finder/" target="_blank">
-                    <h2 class="indigo-text text-darken-4 tooltipped" data-position="top" data-tooltip="Open Web App">
-                        Tower Finder
-                    </h2>
-                </a>
-                <a href="https://github.com/Andymendez100/tower-finder" target="_blank">
-                    <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
-                        tincidunt orci.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Giftastic -->
-        <div class="row">
-            <div class="col s12 l4">
-                <img src="./assets/images/giphy.gif" alt="" class="responsive-img hoverable materialboxed">
-            </div>
-            <div class="col s12 l6 offset-l1">
-                <a href="https://dhuan008.github.io/GifTastic/" target="_blank">
-                    <div class="row">
-                        <div class="col">
-                            <h2 class="indigo-text text-darken-4 tooltipped" data-position="top"
-                                data-tooltip="Open Web App">Giftastic
-                            </h2>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/dhuan008/GifTastic" target="_blank">
-                    <p class="tooltipped" data-position="bottom" data-tooltip="Open Github Repository">Lorem ipsum dolor
-                        sit amet,
-                        consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
-                        tincidunt orci.</p>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- Parallax top -->
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="./assets/images/code-parallax-t.jpg" alt="" class="responsive-img">
-        </div>
+      <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></a>
+      </nav>
     </div>
 
+    <nav id="navigation" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">David Huang</a>
 
-    <!-- Experience | Tabs -->
-    <section class="section container scrollspy" id="experience">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stats">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="about" class="section">
+      <div class="container">
         <div class="row">
-            <div class="col s12 l4 center-align">
-                <a href="assets/storage/resume-placeholder.pdf" download>
-                    <h2 class="indigo-text text-darken-4">Resume</h2>
-                    <i class="fas fa-file-download fa-10x hoverable tooltipped indigo-text text-darken-4"
-                        data-position="bottom" data-tooltip="Click to Open"></i>
-                </a>
-                <p>Click to Open</p>
-            </div>
-            <div class="col s12 l6 offset-l2">
+          <div class="col-md-5">
+            <img class="aboutImage" src="assets/img/about.png" />
+          </div>
 
-                <!-- Tabs -->
-                <ul class="tabs">
-                    <li class="tab col s6">
-                        <a href="#groups" class="active indigo-text text-darken-4">Organizations</a>
-                    </li>
-                    <li class="tab col s6">
-                        <a href="#skill" class="indigo-text text-darken-4">Skills</a>
-                    </li>
-                </ul>
-                <div id="groups" class="col s12">
-                    <br><br>
-                    <p class="flow-text indigo-text text-darken-4">Organizations</p>
-                    <br><br><br>
-                    <p>Link to IESD? With logo?</p>
-                    <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida
-                        urna, vitae
-                        scelerisque erat ornare nec.</p>
-                </div>
-                <div id="skill" class="col s12">
-                    <br><br>
-                    <p class="flow-text indigo-text text-darken-4">Skills</p>
-                    <br><br><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
-                        elit nec,
-                        tincidunt orci.</p>
-                    <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida
-                        urna, vitae
-                        scelerisque erat ornare nec.</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
+          <div class="col-md-7">
+            <h4>My name is David huang</h4>
 
-
-    <!-- Parallax bottom -->
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="./assets/images/code-parallax-b.jpg" alt="" class="responsive-img">
+            <p>
+              Hi there! I'm David Huang from Riverside, CA. I'm a MERN stack
+              developer that is movtivated and eager to grow. I earned a full
+              stack web development certificate from the University of
+              California, Riverside Extension Coding Bootcamp, I've also taken
+              various computer science and engineering courses at UCR, and I'm
+              currently teaching myself C# and asp.net core while working on
+              some side projects.
+            </p>
+            <p>
+              I'm a active member and web application developer for IESD(Inland
+              Empire Software Development), a non-profit dedicated to increasing
+              awareness of technology and open source software in the Inland
+              Empire.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
-
-    <!-- Contact form -->
-    <section class="section container scrollspy" id="contact">
+    <div id="skills" class="skillsSection section">
+      <div class="container">
         <div class="row">
-            <div class="col s12 l5">
-                <h2 class="indigo-text text-darken-4">Get in Touch</h2>
-                <p>I would put my email here, but I'm not sure I should yet. In the meantime, here a email from which
-                    doesn't
-                    actually email me.</p>
-                <p>In the meantime, you can contact me on my linkedin or github page if you're really interested.</p>
-                <p>Thanks for your time</p>
-                <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna,
-                    vitae
-                    scelerisque erat ornare nec.</p>
+          <div class="col-md-12 text-center">
+            <h2>TECHNICAL SKILLS</h2>
+            <p>My proficiency in each skill (drag to scroll)</p>
+          </div>
+
+          <div class="owl-carousel owl-theme">
+            <div class="skill">
+              <span class="chart" data-percent="85">
+                <span class="percent">85</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Javascript</h4>
+              <p>Used in most of my web based projects</p>
             </div>
-            <div class="col s12 l5 offset-l2">
-                <form>
-                    <div class="input-field">
-                        <i class="material-icons prefix">email</i>
-                        <input type="email" id="email">
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">message</i>
-                        <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">date_range</i>
-                        <input type="text" id="date" class="datepicker">
-                        <label for="date">Choose a date you need me for...</label>
-                    </div>
-                    <div class="input-field">
-                        <p>You Are:</p>
-                        <p>
-                            <label>
-                                <input type="checkbox">
-                                <span>Hiring</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox">
-                                <span>Recruiter</span>
-                            </label>
-                        </p>
-                    </div>
-                    <div class="input-field center">
-                        <button class="btn waves-effect waves-light indigo darken-4">Submit</button>
-                    </div>
-                </form>
+
+            <div class="skill">
+              <span class="chart" data-percent="52">
+                <span class="percent">52</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>C & C++</h4>
+              <p>Used for my college courses</p>
             </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="14">
+                <span class="percent">14</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>C#</h4>
+              <p>A new skill I am learning</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="90">
+                <span class="percent">90</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>HTML</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="30">
+                <span class="percent">30</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>MySQL and Mongo</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="30">
+                <span class="percent">30</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>React</h4>
+              <p>Used in some of my web based projects</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-
-    <!-- Footer -->
-    <footer class="page-footer grey darken-3">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5>About Me</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit
-                        elit nec,
-                        tincidunt orci.</p>
+    <div id="stats" class="statsSection section">
+      <div class="container">
+        <!-- <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-clock"></i>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/dhuan008">Github</a></li>
-                        <li><a class="grey-text text-lighten-3"
-                                href="https://www.linkedin.com/in/david-huang-b99822101/">LinkedIn</a></li>
-                    </ul>
+                <div class="squareContent">
+                  <h2 class="counter">4</h2>
+                  <h3>Years Experience</h3>
                 </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-calendar"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">137</h2>
+                  <h3>Clients</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-bolt"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">18</h2>
+                  <h3>iOS Apps</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-cloud"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">58</h2>
+                  <h3>Websites Made</h3>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
-        <div class="footer-copyright grey darken-4">
-            <div class="container center-align">&copy; 2019 David Huang</div>
+      </div>
+    </div>
+
+    <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <p class="subHeading">Like what you see?</p>
+        <h2>I'd love to hear from you!</h2>
+        <a href="mailTo:daveshuang@gmail.com" class="contactButton"
+          >GET IN TOUCH!</a
+        >
+      </div>
+    </div>
+
+    <div id="portfolio" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h2>PORTFOLIO</h2>
+          </div>
+
+          <div class="filter">
+            <ul id="filters">
+              <li><a href="#" data-filter="*" class="current">ALL</a></li>
+              <li><a href="#" data-filter=".apps">Apps</a></li>
+              <li><a href="#" data-filter=".me">Me</a></li>
+              <li><a href="#" data-filter=".websites">Websites</a></li>
+            </ul>
+          </div>
+
+          <div class="itemsContainer">
+            <ul class="items">
+              <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="projectLink">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+
+              <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <img src="assets/img/portfolio/thumbnails/dog-square.jpg" />
+
+                  <div class="icons">
+                    <a
+                      href="assests/img/portfolio/dog.jpg"
+                      title="View image"
+                      class="openButton"
+                      data-fancybox
+                      data-caption="This is a cute dog"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+
+                    <a
+                      href="http://reecekenney.com"
+                      target="_blank"
+                      class="projectLink"
+                    >
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+
+                  <div class="imageOverlay"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
 
+    <div class="copyrightSection">
+      <div class="col-md-12 text-center">
+        <p>&copy; Copyright David Huang 2019</p>
+      </div>
+    </div>
 
-    <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/countUp.js"></script>
+    <script src="assets/js/countUp-jquery.js"></script>
+    <script src="assets/js/jquery.superslides.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 
-    <!-- Materialize CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <!-- Script -->
-    <script src="assets/javascript/main.js"></script>
-
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
