@@ -1,30 +1,13 @@
-const Footer = () => (
-  <div className="footer-wrapper">
-    <div className="copyright">© {new Date().getFullYear()} Fi Studio.</div>
-    <div className="info">
-      <p>
-        Note: This is a demo website.{' '}
-        <a href="https://reacttricks.com/learn-react-by-building-websites-with-next">Learn how to build it.</a>
-      </p>
-      <p>
-        Photography source: <a href="https://unsplash.com">Unsplash</a>
-      </p>
-    </div>
-    <style jsx>{`
-      .footer-wrapper {
-        text-align: center;
-        margin-top: 80px;
-        padding: 80px 30px;
-      }
-      .copyright {
-        margin-bottom: 20px;
-      }
-      .info {
-        color: #777;
-        font-size: 16px;
-      }
-    `}</style>
-  </div>
-);
+import PropTypes from 'prop-types';
 
-export default Footer;
+const Footer = (props) => (
+    <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
+        <p className="copyright">&copy; Next.js Starter - Dimension. Design: <a href="https://html5up.net">HTML5 UP</a>. Built with: <a href="https://github.com/zeit/next.js">Next.js</a></p>
+    </footer>
+)
+
+Footer.propTypes = {
+    timeout: PropTypes.bool
+}
+
+export default Footer
