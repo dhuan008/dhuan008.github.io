@@ -1,420 +1,881 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
+<!doctype html>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/superslides.css" />
+<head>
+
+    <title>David Huang</title>
+
+    <meta name="description" content="">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Google Font: Lato -->
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
-    />
+        href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/brands.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="loader">
-      <div class="inner"></div>
+    <!-- Nivo Lightbox-->
+    <link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css" />
+    <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Themes -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="assets/css/custom.css">-->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- dense.js (Retina plugin) -->
+    <script src="assets/js/dense.js"></script>
+
+    <!-- Nivo Lightbox -->
+    <script src="assets/plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</head>
+
+<body>
+
+    <div class="c-preloader  js-preloader">
+        <div class="c-preloader__spinner  t-preloader__spinner"></div>
     </div>
 
-    <div id="slides">
-      <div class="overlay"></div>
+    <div class="c-main-container  js-main-container">
 
-      <div class="slides-container">
-        <img src="assets/img/slide1.jpg" alt="" />
-        <!-- <img src="assets/img/slide2.jpg" alt="" /> -->
-        <img src="assets/img/slide3.jpg" alt="" />
-      </div>
+        <!-- ################################ -->
+        <!-- ############ HEADER ############ -->
+        <!-- ################################ -->
 
-      <div class="titleMessage">
-        <div class="heading">
-          <p class="main">David Huang</p>
-          <p class="sub typed"></p>
-        </div>
-      </div>
+        <section class="o-section o-section--header  t-section  t-section--header">
+            <div class="c-header">
 
-      <nav class="slides-navigation">
-        <a href="#" class="next"></a>
-        <a href="#" class="prev"></a>
-      </nav>
-    </div>
+                <div class="o-section__header-bg  t-section__header"></div>
+                <div class="o-section__content-bg  t-section__content"></div>
 
-    <nav id="navigation" class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="index.html">David Huang</a>
+                <div class="o-container">
+                    <div class="o-section__container">
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                        <header class="o-section__header  c-header__header  t-section__header">
+                            <div class="c-header__inner-header">
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about"
-              >About <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                                <div class="c-header__avatar">
+                                    <div class="a-header  c-avatar">
+                                        <img class="c-avatar__img" src="assets/images/header/avatar.jpg" alt="">
+                                    </div><!-- /c-avatar -->
+                                </div><!-- /c-header-avatar -->
 
-    <div id="about" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <img class="aboutImage" src="assets/img/about.png" />
-          </div>
+                            </div><!-- /c-header__inner-header -->
+                        </header><!-- /o-section__header -->
 
-          <div class="col-md-7 valign-wrapper">
-            <div>
-              <h4>My name is David huang</h4>
+                        <div class="o-section__content  c-header__content  t-section__content">
+                            <div class="c-header__inner-content">
 
-              <p>
-                Hi there! I'm David Huang from Riverside, CA. I'm a MERN stack
-                developer that is movtivated and eager to grow. I earned a full
-                stack web development certificate from the University of
-                California, Riverside Extension Coding Bootcamp, I've also taken
-                various computer science and engineering courses at UCR, and I'm
-                currently teaching myself C# and asp.net core while working on
-                some side projects.
-              </p>
-              <p>
-                I'm a active member and web application developer for
-                IESD(Inland Empire Software Development), a non-profit dedicated
-                to increasing awareness of technology and open source software
-                in the Inland Empire.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                                <div class="c-header__top">
 
-    <div id="skills" class="skillsSection section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2>TECHNICAL SKILLS</h2>
-            <p>My proficiency in each skill (drag to scroll)</p>
-          </div>
+                                    <div class="c-header__brand">
 
-          <div class="owl-carousel owl-theme">
-            <div class="skill">
-              <span class="chart" data-percent="85">
-                <span class="percent">85</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>Javascript</h4>
-              <p>Used in most of my web based projects</p>
-            </div>
+                                        <div class="c-brand">
+                                            <h1 class="c-brand__title  t-title">
+                                                <span class="c-brand__sizer">
+                                                    <span class="a-header  c-brand__first-word  t-title__first-word">
+                                                        David
+                                                    </span>
+                                                    <span class="a-header  c-brand__second-word  t-title__second-word">
+                                                        Huang
+                                                    </span>
+                                                </span>
+                                            </h1>
+                                            <h2 class="a-header  c-brand__sub-title  t-sub-title">
+                                                <span class="c-brand__sizer">
+                                                    Web Developer
+                                                </span>
+                                            </h2>
+                                        </div><!-- /c-brand -->
 
-            <div class="skill">
-              <span class="chart" data-percent="52">
-                <span class="percent">52</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>C & C++</h4>
-              <p>Used for my college courses</p>
-            </div>
+                                    </div><!-- /c-header__brand -->
 
-            <div class="skill">
-              <span class="chart" data-percent="14">
-                <span class="percent">14</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>C#</h4>
-              <p>A new skill I am learning</p>
-            </div>
+                                    <ul class="c-header__social-buttons  c-social-buttons">
+                                        <li class="a-header">
+                                            <a href="https://github.com/dhuan008" target="_blank"
+                                                class="c-social-button  t-social-button">
+                                                <i class="fab  fa-lg  fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="a-header">
+                                            <a href="https://www.linkedin.com/in/david-s-huang/" target="_blank"
+                                                class="c-social-button  t-social-button">
+                                                <i class="fab  fa-lg  fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul><!-- /c-header__social-buttons -->
 
-            <div class="skill">
-              <span class="chart" data-percent="90">
-                <span class="percent">90</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>HTML</h4>
-              <p>Used in most of my web based projects</p>
-            </div>
+                                </div><!-- /c-header__top -->
 
-            <div class="skill">
-              <span class="chart" data-percent="70">
-                <span class="percent">70</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>CSS</h4>
-              <p>Used in most of my web based projects</p>
-            </div>
+                                <div class="c-header__contact">
 
-            <div class="skill">
-              <span class="chart" data-percent="30">
-                <span class="percent">30</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>MySQL and Mongo</h4>
-              <p>Used in most of my web based projects</p>
-            </div>
+                                    <hr class="a-header  c-header__contact-divider" />
 
-            <div class="skill">
-              <span class="chart" data-percent="30">
-                <span class="percent">30</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>React</h4>
-              <p>Used in some of my web based projects</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                                    <div class="o-grid">
 
-    <div id="portfolio" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="heading">
-              <h2>PORTFOLIO</h2>
-            </div>
+                                        <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                            <div class="a-header  o-content">
+                                                <div class="o-content__body">
+                                                    <h4>Location</h4>
+                                                    <address>
+                                                        Moreno Valley, CA
+                                                    </address>
+                                                </div>
+                                            </div><!-- /o-content -->
+                                        </div><!-- /o-grid__col -->
 
-            <div class="filter">
-              <ul id="filters">
-                <li><a href="#" data-filter="*" class="current">ALL</a></li>
-                <li><a href="#" data-filter=".apps">Apps</a></li>
-                <li><a href="#" data-filter=".websites">Websites</a></li>
-              </ul>
-            </div>
+                                        <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                            <div class="a-header  o-content">
+                                                <div class="o-content__body">
+                                                    <h4>Phone</h4>
+                                                    <p>
+                                                        (310) 602-9975
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-content -->
+                                        </div><!-- /o-grid__col -->
 
-            <div class="itemsContainer">
-              <ul class="items">
-                <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                  <div class="item">
-                    <img
-                      src="assets/img/portfolio/thumbnails/know-me-square.gif"
-                    />
+                                        <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                            <div class="a-header  o-content">
+                                                <div class="o-content__body">
+                                                    <a href="https://dhuan008.github.io/" target="_blank"
+                                                        class="t-link-container">
+                                                        <h4>Web</h4>
+                                                        <p>
+                                                            <span class="t-link-container__item--blended">
+                                                                dhuan008.github.io
+                                                            </span>
+                                                        </p>
+                                                    </a><!-- /o-link-container -->
+                                                </div>
+                                            </div><!-- /o-content -->
+                                        </div><!-- /o-grid__col -->
 
-                    <div class="icons">
-                      <a
-                        href="https://kno-me.herokuapp.com/"
-                        title="View Game"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="openButton"
-                      >
-                        <i class="fa fa-search"></i>
-                      </a>
+                                        <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                            <div class="a-header  o-content">
+                                                <div class="o-content__body">
+                                                    <h4>Email</h4>
+                                                    <p>
+                                                        <span class="t-link-container__item--blended">
+                                                            daveshuang@gmail.com
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div><!-- /o-content -->
+                                        </div><!-- /o-grid__col -->
 
-                      <a
-                        href="https://github.com/Andymendez100/DoYuhKnow"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="projectLink"
-                      >
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </div>
+                                    </div><!-- /o-grid -->
+                                </div><!-- /c-header__contact -->
 
-                    <div class="imageOverlay"></div>
-                  </div>
-                </li>
+                            </div><!-- /c-header__inner-content -->
+                        </div><!-- /o-section__content -->
 
-                <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                  <div class="item">
-                    <img
-                      src="assets/img/portfolio/thumbnails/IESD-Website.PNG"
-                    />
+                    </div><!-- /o-section__container -->
 
-                    <div class="icons">
-                      <a
-                        href="https://www.iesd.com/"
-                        title="View Website"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="openButton"
-                      >
-                        <i class="fa fa-search"></i>
-                      </a>
+                </div><!-- /o-container -->
 
-                      <a
-                        href="https://github.com/inland-empire-software-development/main"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="projectLink"
-                      >
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </div>
+            </div><!-- /c-header -->
+        </section><!-- /o-section -->
 
-                    <div class="imageOverlay"></div>
-                  </div>
-                </li>
 
-                <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                  <div class="item">
-                    <img
-                      src="assets/img/portfolio/thumbnails/tower-finder.gif"
-                    />
 
-                    <div class="icons">
-                      <a
-                        href="https://andymendez100.github.io/tower-finder/"
-                        title="View image"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="openButton"
-                      >
-                        <i class="fa fa-search"></i>
-                      </a>
+        <!-- ################################ -->
+        <!-- ############ INTRO ############# -->
+        <!-- ################################ -->
 
-                      <a
-                        href="https://github.com/Andymendez100/tower-finder"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="projectLink"
-                      >
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </div>
+        <section class="o-section  t-section  ">
 
-                    <div class="imageOverlay"></div>
-                  </div>
-                </li>
+            <div class="o-section__header-bg  t-section__header"></div>
+            <div class="o-section__content-bg  t-section__content"></div>
 
-                <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                  <div class="item">
-                    <img
-                      src="assets/img/portfolio/thumbnails/word-guess-game.gif"
-                    />
+            <div class="o-container">
+                <div class="o-section__container">
 
-                    <div class="icons">
-                      <a
-                        href="https://dhuan008.github.io/Word-Guess-Game/"
-                        title="View image"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="openButton"
-                      >
-                        <i class="fa fa-search"></i>
-                      </a>
+                    <header class="o-section__header  t-section__header">
+                        <div class="o-content">
+                            <h2 class="o-section__heading">
+                                Intro
+                            </h2>
+                        </div>
+                    </header><!-- /o-section__header -->
 
-                      <a
-                        href="https://github.com/dhuan008/Word-Guess-Game"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="projectLink"
-                      >
-                        <i class="fa fa-link"></i>
-                      </a>
-                    </div>
+                    <div class="o-section__content  t-section__content  ">
 
-                    <div class="imageOverlay"></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                        <div class="o-content">
+                            <div class="c-intro">
+                                <div class="o-content__body">
+                                    <p>
+                                        JavaScript developer with a passion for experimenting with bleeding edge
+                                        technology. I specialize in using the MERN stack to build responsive, dynamic
+                                        and high-quality applications for businesses. I enjoy solving real life problems
+                                        by developing technologies that solve them. Experienced with Front-end web
+                                        development and technologies like JavaScript, Node, Express, MySQL, Bash
+                                        and Git.
+                                </div>
+                            </div>
+                        </div>
 
-    <div id="contact" class="contactSection section">
-      <div class="col-md-12 text-center">
-        <p class="subHeading">Like what you see?</p>
-        <h2>I'd love to hear from you!</h2>
-        <a href="mailto:daveshuang@gmail.com" class="contactButton"
-          >GET IN TOUCH!</a
-        >
-      </div>
-    </div>
+                    </div><!-- /o-section__content -->
 
-    <div id="stats" class="statsSection section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h4 class="subHeading">Check out some of my other works</h4>
-            <h3>&</h3>
-            <h4>
-              Connect with me on Linkedin
-            </h4>
-          </div>
-        </div>
+                </div><!-- /o-section__container -->
+            </div><!-- /o-container -->
 
-        <div class="row text-center">
-          <div class="col-2 offset-4">
-            <a
-              href="https://github.com/dhuan008"
-              class="btn-floating btn-large indigo darken-3"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
+        </section><!-- /o-section -->
 
-          <div class="col-2">
-            <a
-              href="https://www.linkedin.com/in/david-huang-b99822101/"
-              class="btn-floating btn-large indigo darken-3"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="copyrightSection">
-      <div class="col-md-12 text-center">
-        <p>&copy; Copyright David Huang 2019</p>
-      </div>
-    </div>
 
-    <script src="assets/js/countUp.js"></script>
-    <script src="assets/js/countUp-jquery.js"></script>
-    <script src="assets/js/jquery.superslides.min.js"></script>
-    <script src="assets/js/jquery.easypiechart.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+        <!-- ################################ -->
+        <!-- ########## EXPERIENCE ########## -->
+        <!-- ################################ -->
 
-    <script src="assets/js/script.js"></script>
-  </body>
+        <section class="o-section  t-section  ">
+
+            <div class="o-section__header-bg  t-section__header"></div>
+            <div class="o-section__content-bg  t-section__content"></div>
+
+            <div class="o-container">
+                <div class="o-section__container">
+
+                    <header class="o-section__header  t-section__header">
+                        <div class="o-content">
+                            <h2 class="o-section__heading">
+                                Experience
+                            </h2>
+                        </div>
+                    </header><!-- /o-section__header -->
+
+                    <div class="o-section__content  t-section__content  u-pb-0">
+
+                        <div class="a-experience-timeline  c-timeline  t-border-color">
+
+                            <div class="c-timeline__item">
+                                <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                <div class="o-content">
+                                    <div class="o-grid">
+                                        <div class="o-grid__col-md-5">
+                                            <div class="c-work__timeframe">
+                                                2019 &ndash; Present
+                                            </div>
+                                            <h3 class="c-work__heading">
+                                                Freelancer
+                                            </h3>
+                                            <h4 class="c-work__title">
+                                                Web Developer
+                                            </h4>
+                                            <div class="c-work__location">
+                                                San Bernardino, CA
+                                            </div>
+                                        </div>
+                                        <div class="o-grid__col-md-7">
+                                            <p>
+                                                Developed applications using MERN stack, Bootstrap, Git, and Node.js.
+                                                Converted PDF designs to pixel perfect functioning
+                                                applications. Responsible for hosting decisions, deployment, version
+                                                control and management of apps. Executed web accessibility and
+                                                performance based architecture for web applications. Completed projects
+                                                utilizing waterfall and scrum project management methodologies. Built
+                                                internal facing applications for clients requiring NDAs.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-grid -->
+                                </div><!-- /o-content -->
+                            </div><!-- /c-timeline__item -->
+
+                            <div class="c-timeline__item">
+                                <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                <div class="o-content">
+                                    <div class="o-grid">
+                                        <div class="o-grid__col-md-5">
+                                            <div class="c-work__timeframe">
+                                                2019 &ndash; Present
+                                            </div>
+                                            <h3 class="c-work__heading">
+                                                Inland Empire Software Development
+                                            </h3>
+                                            <h4 class="c-work__title">
+                                                Application Developer
+                                            </h4>
+                                            <div class="c-work__location">
+                                                Riverside, CA
+                                            </div>
+                                        </div>
+                                        <div class="o-grid__col-md-7">
+                                            <p>
+                                                Designed and oversaw the organization's version control workflow.
+                                                Responsible for building and growing a community of over 800
+                                                programmers. Guided developers through the process of contributing to
+                                                free and open source software.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-grid -->
+                                </div><!-- /o-content -->
+                            </div><!-- /c-timeline__item -->
+
+                        </div><!-- /c-timeline -->
+
+                    </div><!-- /o-section__content -->
+
+                </div><!-- /o-section__container -->
+            </div><!-- /o-container -->
+
+        </section><!-- /o-section -->
+
+
+
+        <!-- ################################ -->
+        <!-- ########### EDUCATION ########## -->
+        <!-- ################################ -->
+
+        <section class="o-section  t-section  ">
+
+            <div class="o-section__header-bg  t-section__header"></div>
+            <div class="o-section__content-bg  t-section__content"></div>
+
+            <div class="o-container">
+                <div class="o-section__container">
+
+                    <header class="o-section__header  t-section__header">
+                        <div class="o-content">
+                            <h2 class="o-section__heading">
+                                Education
+                            </h2>
+                        </div>
+                    </header><!-- /o-section__header -->
+
+                    <div class="o-section__content  t-section__content  u-pt-0">
+
+                        <div class="o-content">
+                            <div class="a-education-timeline  c-timeline  t-border-color  o-section__full-top-space">
+                                <div class="c-timeline__end  t-border-color"></div>
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5">
+                                                <div class="c-work__timeframe">
+                                                    2019 &ndash; 2020
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    UCR Extension
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Certification in Full Stack Web Development
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Riverside, CA
+                                                </div>
+                                            </div>
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                                <div class="c-timeline__item">
+                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                    <div class="o-content">
+                                        <div class="o-grid">
+                                            <div class="o-grid__col-md-5">
+                                                <div class="c-work__timeframe">
+                                                    2008 &ndash; 2012
+                                                </div>
+                                                <h3 class="c-work__heading">
+                                                    University of California, Riverside
+                                                </h3>
+                                                <h4 class="c-work__title">
+                                                    Bachelor of Computer Science
+                                                </h4>
+                                                <div class="c-work__location">
+                                                    Riverside, CA
+                                                </div>
+                                            </div>
+                                        </div><!-- /o-grid -->
+                                    </div><!-- /o-content -->
+                                </div><!-- /c-timeline__item -->
+
+                            </div><!-- /c-timeline -->
+                        </div><!-- /o-content -->
+
+                    </div><!-- /o-section__content -->
+
+                </div><!-- /o-section__container -->
+            </div><!-- /o-container -->
+
+        </section><!-- /o-section -->
+
+
+
+        <!-- ################################ -->
+        <!-- ########## EXPERTISE ########### -->
+        <!-- ################################ -->
+
+        <section class="o-section  t-section  ">
+
+            <div class="o-section__header-bg  t-section__header"></div>
+            <div class="o-section__content-bg  t-section__content"></div>
+
+            <div class="o-container">
+                <div class="o-section__container">
+
+                    <header class="o-section__header  t-section__header">
+                        <div class="o-content">
+                            <h2 class="o-section__heading">
+                                Expertise
+                            </h2>
+                        </div>
+                    </header><!-- /o-section__header -->
+
+                    <div class="o-section__content  t-section__content  ">
+
+                        <div class="o-grid">
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>JavaScript</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>HTML</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>CSS</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>Bootstrap 4</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>jQuery</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>ReactJS</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>SASS</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>NextJS</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>Sequelize</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>AJAX</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>Node</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>Express</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>Git/GitHub</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>Mongoose</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>Firebase</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>MongoDB</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>MySQL</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="o-grid__col-sm-6">
+                                <div class="o-media  o-media--block  o-content in-view">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            <i class="fa fa-xs fa-circle in-view" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body  o-content__body">
+                                        <h3>PostgreSQL</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!-- /o-section__content -->
+
+                </div><!-- /o-section__container -->
+            </div><!-- /o-container -->
+
+        </section><!-- /o-section -->
+
+
+
+        <!-- ################################ -->
+        <!-- ########### PORTFOLIO ########## -->
+        <!-- ################################ -->
+
+        <section class="o-section  t-section  ">
+
+            <div class="o-section__header-bg  t-section__header"></div>
+            <div class="o-section__content-bg  t-section__content"></div>
+
+            <div class="o-container">
+                <div class="o-section__container">
+
+                    <header class="o-section__header  t-section__header">
+                        <div class="o-content">
+                            <h2 class="o-section__heading">
+                                Portfolio
+                            </h2>
+                        </div>
+                    </header><!-- /o-section__header -->
+
+                    <div class="o-section__content  t-section__content  o-section__full-bottom-space">
+
+                        <div class="o-grid  o-grid--gallery">
+
+                            <div class="o-grid__col-sm-6">
+                                <a class="c-image-overlay  t-image-overlay  js-lightbox" href="https://iesd.com/"
+                                    target="_blank" data-lightbox-hidpi="" title="IESD"
+                                    data-lightbox-gallery="portfolio">
+                                    <img src="assets/images/portfolio/iesd.png" alt="">
+                                    <div class="c-image-overlay__content">
+                                        <h3>
+                                            Inland Empire Software Development
+                                        </h3>
+                                        <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+                                    </div>
+                                </a>
+                            </div><!-- /o-grid__col -->
+
+                        </div><!-- /o-grid -->
+
+                    </div><!-- /o-section__content -->
+
+                </div><!-- /o-section__container -->
+            </div><!-- /o-container -->
+
+        </section><!-- /o-section -->
+
+
+
+        <!-- ################################ -->
+        <!-- ############ FOOTER ############ -->
+        <!-- ################################ -->
+
+        <section class="o-section  t-section  o-section--footer">
+
+            <div class="o-section__header-bg  t-section__header"></div>
+            <div class="o-section__content-bg  t-section__content"></div>
+
+            <div class="o-container">
+                <div class="o-section__container">
+
+                    <header class="o-section__header  t-section__header">
+                        <div class="o-content">
+                            <h2 class="o-section__heading">
+                                Contact
+                            </h2>
+                        </div>
+                    </header><!-- /o-section__header -->
+
+                    <div class="o-section__content  t-section__content  ">
+
+                        <div class="c-footer__contact">
+                            <div class="o-grid">
+
+                                <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-content__body">
+                                            <h4>Location</h4>
+                                            <address>
+                                                Moreno Valley, CA
+                                            </address>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-content__body">
+                                            <h4>Phone</h4>
+                                            <p>
+                                                (310) 602-9975
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-content__body">
+                                            <a href="https://dhuan008.github.io/" target="_blank"
+                                                class="t-link-container">
+                                                <h4>Web</h4>
+                                                <p>
+                                                    <span class="t-link-container__item--blended">
+                                                        dhuan008.github.io
+                                                    </span>
+                                                </p>
+                                            </a><!-- /o-link-container -->
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-md-3  o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-content__body">
+                                            <h4>Email</h4>
+                                            <p>
+                                                <span class="t-link-container__item--blended">
+                                                    daveshuang@gmail.com
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-content -->
+                                </div><!-- /o-grid__col -->
+
+                            </div><!-- /o-grid -->
+                        </div><!-- /c-footer__contact -->
+
+                        <hr class="c-footer__contact-divider" />
+
+                        <div class="o-content">
+                            <div class="c-footer__bottom">
+                                <div class="c-footer__brand">
+
+                                    <div class="c-brand">
+                                        <div class="o-content__body">
+                                            <h1 class="c-brand__title  t-title">
+                                                <span class="c-brand__sizer  c-brand__sizer--sm">
+                                                    <span class="a-footer  c-brand__first-word  t-title__first-word">
+                                                        David
+                                                    </span>
+                                                    <span class="a-footer  c-brand__second-word  t-title__second-word">
+                                                        Huang
+                                                    </span>
+                                                </span>
+                                            </h1>
+                                        </div><!-- /o-content__body -->
+                                    </div><!-- /c-brand -->
+
+                                </div><!-- /c-footer__brand -->
+
+                                <ul class="c-footer__social-buttons  c-social-buttons  o-content__body">
+                                    <li class="a-footer">
+                                        <a href="https://github.com/dhuan008" target="_blank"
+                                            class="c-social-button  t-social-button">
+                                            <i class="fab  fa-lg  fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="a-footer">
+                                        <a href="https://www.linkedin.com/in/david-s-huang/" target="_blank"
+                                            class="c-social-button  t-social-button">
+                                            <i class="fab  fa-lg  fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+
+                                </ul><!-- /c-footer__social-buttons -->
+
+                            </div><!-- /c-footer__bottom -->
+                        </div><!-- /o-content -->
+
+                    </div><!-- /o-section__content -->
+
+                </div><!-- /o-section__container -->
+            </div><!-- /o-container -->
+
+        </section><!-- /o-section -->
+
+
+
+    </div><!-- /c-main-container -->
+
+</body>
+
 </html>
